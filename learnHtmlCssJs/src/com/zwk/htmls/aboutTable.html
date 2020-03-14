@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格学习</title>
+    <link href="../css/OneCss.css" rel="stylesheet" title="text/css">
+</head>
+<body>
+<h4 align="center">表格使用css样式及align和bgcolor的使用</h4>
+<!--表格 border边框宽度-->
+<!--tr行 td列 都有bgcolor背景色和align代表表格在网页中显示的位置  -->
+<table width="400px" border="1px" align="center" bgcolor="#00bfff">
+    <tr>
+        <!--单独控制中间对齐-->
+        <td align="center" bgcolor="#ffc0cb">
+            <!--a标签超链接-->
+            <a class="textFontsRed" href="https://www.baidu.com" target="_blank">百度一下</a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://cn.bing.com/"> bing </a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://github.com/explore"> github </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <!--a标签超链接-->
+            <a class="textFontsRed" href="https://www.baidu.com" target="_blank">百度一下</a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://cn.bing.com/"> bing </a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://github.com/explore"> github </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <!--a标签超链接-->
+            <a class="textFontsRed" href="https://www.baidu.com" target="_blank">百度一下</a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://cn.bing.com/"> bing </a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://github.com/explore"> github </a>
+        </td>
+    </tr>
+</table>
+
+
+<h4 align="center">表格的合并</h4>
+<!--
+colspan:列合并
+rowspan:行合并
+作用到<td>中当合并占用了其他位置的td即要删除指定td不然列表将不协调
+-->
+<table border="1px" width="400px" align="center">
+    <tr>
+        <td colspan="2">1</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">合并后的行列可以填充新的表格
+            <!--
+            合并后的行列可以填充新的表格
+            -->
+        <table border="1px" width="100%">
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+            </tr>
+        </table>
+
+        </td>
+        <td>3</td>
+        <td rowspan="2">4</td>
+    </tr>
+    <tr>
+        <td>3</td>
+    </tr>
+</table>
+</body>
+</html>

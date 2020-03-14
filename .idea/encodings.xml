@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/createWebServer/src/analysisXMLFile/analysisXML/AnalysisSolution.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/createWebServer/src/useHtml/login.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ControlThread/ThreadJoin/Bar.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useGeneric/src/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useJunit/src/aUseJunit/UseJunit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useJunit/src/bUseJunit/UseJunit2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useNetworkprogrma/src/cUseSocket/multi/Server.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useReflexCreateObjetct/src/useReflex/Use.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/useThreadLocal/src/use/Main01.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/useThreadLocal/src/use/Main02.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

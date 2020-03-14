@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--/tomcat中配置的网站名/web目录下的文件名/资源名-->
+<h3>a标签href指向网站目录方式下载资源,一些文件存在直接被解析的可能</h3>
+<a href="/downFile/fileSource/abc.avi">abc.avi</a><br>
+<a href="/downFile/fileSource/b.jpg">b.jpg</a><br>
+<a href="/downFile/fileSource/temp.txt">temp.txt</a><br>
+<br><br><br>
+
+<!--指向网站Servlet    /tomcat中配置的网站名/Servlet的url?参数-->
+<h3>a标签href指向网站Servlet并传参下载,Servlet控制浏览器不对资源解析而是直接下载资源</h3>
+<a href="/downFile/downFileServlet?fileName=abc.avi">abc.avi</a><br>
+<a href="/downFile/downFileServlet?fileName=b.jpg">b.jpg</a><br>
+<a href="/downFile/downFileServlet?fileName=temp.txt">temp.txt</a><br>
+<a href="/downFile/encodingDownFile?fileName=中国.jpg">中国.jpg</a><br>
+</body>
+</html>

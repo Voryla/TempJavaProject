@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+数据需要隐藏使用post方式
+<form action="/loginProject/aboutRequest" method="post">
+    <input type="text" name="username"><br>
+    <input type="text" name="password"><br>
+    <input type="submit" value="提交">
+</form>
+数据不需要隐藏使用get方式
+<form action="/loginProject/aboutRequest" method="get">
+    <input type="text" name="username"><br>
+    <input type="text" name="password"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

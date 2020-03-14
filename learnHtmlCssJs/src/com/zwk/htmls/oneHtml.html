@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/OneCss.css" rel="stylesheet" type="text/css"/>
+    <title>MyOneHtml</title>
+    <!-- 1. 使用 <link> 标签导入
+    使用 <link> 标签导入外部样式表文件：
+    <link href="001.css" rel="stylesheet" type="text/css" />
+
+    对各个属性的说明：
+    href 属性设置外部样式表文件的地址，可以是相对地址，也可以是绝对地址。
+    rel 属性定义关联的文档，这里表示关联的是样式表。
+    type 属性定义导入文件的类型，同 style 元素一样，text/css表明为 CSS 文本文件。
+
+    一般在定义 <link> 标签时，应定义 3 个基本属性，其中 href 是必须设置属性。-->
+
+</head>
+<body background="">
+<!--路径问题./当前目录 ../上级目录-->
+<img src="../img/logo2.png" width="130" height="50" alt="图片加载失败时，显示。"/>
+<!--这是html的注释-->
+<!--标题标签 从h1-h6字体逐渐变小-->
+<h1>公司简介</h1>
+<!--水平线-->
+<hr size="5" noshade="noshade" color="Green"/>
+<!--段落标签-->
+<p>其实这个问题在上面已经阐述过了， Servlet是一个特殊的Java程序，它运行于服务器的JVM中, 能够依靠服务器的支持向浏览器提供显示内容。 JSP本质上是Servlet的一种简易形式，
+    <!--<b/>粗体  <i/>斜体 <u/> 下划线-->
+    <!--<strong/>粗体 <em/>斜体 带语义的标签 如果给盲人阅读语音会加重-->
+    <b class="textFontsRed"><u>JSP会被服务器处理成一个类似于Servlet的Java程序</u></b>，
+    可以简化页面内容的生成。<i>Servlet </i>和<i> JSP </i>最主要的不同点在于，Servlet的应用逻辑是在Java文件中，并且完全从表示层中的HTML分离开来。而JSP的情况是Java和HTML可以组合成一个扩展名为.jsp的文件。
+    有人说，Servlet就是在Java中写HTML，而JSP就是在HTML中写Java代码，当然这个说法是很片面且不够准确的。JSP侧重于视图，
+    Servlet更侧重于控制逻辑，在MVC架构模式中，JSP适合充当视图（view）而Servlet适合充当控制器（controller）。</p>
+<p>
+    SP是一种Servlet，但是与HttpServlet的工作方式不太一样。HttpServlet是先由源代码编译为class文件后部署到服务器下，为先编译后部署。而JSP则是先部署后编译。JSP会在客户端第一次请求JSP文件时被编译为HttpJspPage类（接口Servlet的一个子类）。该类会被服务器临时存放在服务器工作目录里面。下面通过实例给大家介绍。
+    工程JspLoginDemo下有一个名为login.jsp的Jsp文件，把工程第一次部署到服务器上后访问这个Jsp文件，我们发现这个目录下多了下图这两个东东。
+    .class文件便是JSP对应的Servlet。编译完毕后再运行class文件来响应客户端请求。以后客户端访问login.jsp的时候，Tomcat将不再重新编译JSP文件，而是直接调用class文件来响应客户端请求。</p>
+<P>JSP有9个内置对象：
+    request：封装客户端的请求，其中包含来自GET或POST请求的参数；<br/>
+    response：封装服务器对客户端的响应；<br/>
+    pageContext：通过该对象可以获取其他对象；<br/>
+    session：封装用户会话的对象；<br/>
+    application：封装服务器运行环境的对象；<br/>
+    out：输出服务器响应的输出流对象；<br/>
+    config：Web应用的配置对象；<br/>
+    page：JSP页面本身（相当于Java程序中的this）；<br/>
+    exception：封装页面抛出异常的对象。</P>
+<!--无序列表 type 每行前的显示类型-->
+<!--li列表项-->
+<ul>
+    <li><a class="urlTextFonts" href="https://www.baidu.com" target="_self">百度一下</a></li>
+    <li><a class="urlTextFonts" href="https://cn.bing.com/"> bing </a></li>
+    <li><a class="urlTextFonts" href="https://github.com/explore"> github </a></li>
+</ul>
+<!--有序列表-->
+<!--a标签中target属性_blank代表在新的标签页打开 _self代表在本页面打开-->
+<!--属性start=2控制从几号开始控制只能使用数字 type 每行前的显示类型-->
+<ol>
+    <li><a class="urlTextFonts" href="https://www.baidu.com" target="_blank">百度一下</a></li>
+    <li><a class="urlTextFonts" href="https://cn.bing.com/"> bing </a></li>
+    <li><a class="urlTextFonts" href="https://github.com/explore"> github </a></li>
+</ol>
+<!--表格 border边框宽度align代表表格在网页中显示的位置-->
+<!--tr行 td列 都有bgcolor背景色和align内容对齐方式属性  -->
+<table border="1px" bgcolor="green">
+    <tr>
+        <td>
+            <!--a标签超链接-->
+            <a class="textFontsRed" href="https://www.baidu.com" target="_blank">百度一下</a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://cn.bing.com/"> bing </a>
+        </td>
+        <td>
+            <a class="textFontsRed" href="https://github.com/explore"> github </a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

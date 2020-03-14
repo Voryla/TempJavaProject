@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>com.zwk.myServer.MyServlet</servlet-class>
+        <!--在服务器启动后即运行init方法而不是在客户端第一次请求时运行，
+            参数0-5均可数字越小优先级越高，此处的1小于下方MyServletUseInterface的优先级
+            所以在服务器启动时MyServletUseInterface的init先于MyServlet的init执行.
+            如果连个优先级相同，先执行web.xml在前面的servlet的init方法
+        -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--MyServletUseInterface配置信息-->
+    <servlet>
+        <servlet-name>MyServletUseInterface</servlet-name>
+        <servlet-class>com.zwk.myServer.MyServletUseInterface</servlet-class>
+        <!--在服务器启动时即运行init方法而不是在客户端第一次请求时运行，参数0-5均可数字越小优先级越高-->
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServletUseInterface</servlet-name>
+        <!--完全匹配-->
+        <url-pattern>/MyServletUseInterface</url-pattern>
+
+        <!--目录匹配：在浏览器中匹配/a/b/后任意字符都指向此servlet-->
+        <!--
+         <url-pattern>/a/b/*</url-pattern>
+        -->
+
+        <!--扩展名匹配：任何以.abc为扩展名均可指向此servlet-->
+        <!--
+        <url-pattern>*.abc</url-pattern>
+        -->
+
+
+        <!--缺省路径  此处会覆盖tomcat的缺省路径，会导致无法访问静态页面，当我们不手动配置时，
+            当所有pattern都不符时tomcat会使用tomcat中web.xml中的缺省路径就可以访问到静态html页面
+        -->
+        <!--
+        <url-pattern>/</url-pattern>
+        -->
+
+    </servlet-mapping>
+
+    <!--欢迎页面，也就是默认页面当输入基本地址后什么都没有输入会根据一下过滤器从上到下的顺序
+        查找根目录下符合的页面只显示一个。如过不进行配置tomcat会有默认的配置起顺序为
+        index.html    index.htm  index.jsp
+     -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

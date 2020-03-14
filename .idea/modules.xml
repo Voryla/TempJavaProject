@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BrushProblem/BrushProblem.iml" filepath="$PROJECT_DIR$/BrushProblem/BrushProblem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TempJavaProject.iml" filepath="$PROJECT_DIR$/TempJavaProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TempLearnJava/TempLearnJava.iml" filepath="$PROJECT_DIR$/../TempLearnJava/TempLearnJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useGUI/UseGUI.iml" filepath="$PROJECT_DIR$/useGUI/UseGUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useGeneric/UseGeneric.iml" filepath="$PROJECT_DIR$/useGeneric/UseGeneric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useHappenBefore/UseHappenBefore.iml" filepath="$PROJECT_DIR$/useHappenBefore/UseHappenBefore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useLambda/UseLambda.iml" filepath="$PROJECT_DIR$/useLambda/UseLambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useLocalBrowser/UseLocalBrowser.iml" filepath="$PROJECT_DIR$/useLocalBrowser/UseLocalBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useMultithreadingSingletonMode/UseMultithreadingSingletonMode.iml" filepath="$PROJECT_DIR$/useMultithreadingSingletonMode/UseMultithreadingSingletonMode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useMySql/UseMySql.iml" filepath="$PROJECT_DIR$/useMySql/UseMySql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useNetworkprogrma/UseNetworkprogrma.iml" filepath="$PROJECT_DIR$/useNetworkprogrma/UseNetworkprogrma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useQuartz/UseQuartz.iml" filepath="$PROJECT_DIR$/useQuartz/UseQuartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useReentrantLock/UseReentrantLock.iml" filepath="$PROJECT_DIR$/useReentrantLock/UseReentrantLock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useStringJoiner/UseStringJoiner.iml" filepath="$PROJECT_DIR$/useStringJoiner/UseStringJoiner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useThreadLocal/UseThreadLocal.iml" filepath="$PROJECT_DIR$/useThreadLocal/UseThreadLocal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useTimerTask/UseTimerTask.iml" filepath="$PROJECT_DIR$/useTimerTask/UseTimerTask.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aboutEquals/aboutEquals.iml" filepath="$PROJECT_DIR$/aboutEquals/aboutEquals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aboutInterfaceUseDefault/aboutInterfaceUseDefault.iml" filepath="$PROJECT_DIR$/aboutInterfaceUseDefault/aboutInterfaceUseDefault.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aboutPolymorphism/aboutPolymorphism.iml" filepath="$PROJECT_DIR$/aboutPolymorphism/aboutPolymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/createWebServer/createWebServer.iml" filepath="$PROJECT_DIR$/createWebServer/createWebServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnHtmlCssJs/learnHtmlCssJs.iml" filepath="$PROJECT_DIR$/learnHtmlCssJs/learnHtmlCssJs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnJEE/learnJEE.iml" filepath="$PROJECT_DIR$/learnJEE/learnJEE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnJEEUseLog4j/learnJEEUseLog4j.iml" filepath="$PROJECT_DIR$/learnJEEUseLog4j/learnJEEUseLog4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnJEE_1/learnJEE_1.iml" filepath="$PROJECT_DIR$/learnJEE_1/learnJEE_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnJEE_DownFile/learnJEE_DownFile.iml" filepath="$PROJECT_DIR$/learnJEE_DownFile/learnJEE_DownFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learnLog4j/learnLog4j.iml" filepath="$PROJECT_DIR$/learnLog4j/learnLog4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useIO/useIO.iml" filepath="$PROJECT_DIR$/useIO/useIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useJunit/useJunit.iml" filepath="$PROJECT_DIR$/useJunit/useJunit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useReflexCreateObjetct/useReflexCreateObjetct.iml" filepath="$PROJECT_DIR$/useReflexCreateObjetct/useReflexCreateObjetct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/useThreadSynchronized/useThreadSynchronized.iml" filepath="$PROJECT_DIR$/useThreadSynchronized/useThreadSynchronized.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zwk/zwk.iml" filepath="$PROJECT_DIR$/zwk/zwk.iml" />
+    </modules>
+  </component>
+</project>

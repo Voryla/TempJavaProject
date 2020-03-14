@@ -1,0 +1,32 @@
+1.要将mysql的jar包放在项目的WEB-INF下的lib文件夹中否则在调用Class.forName(JDBC_DRIVER);时
+会报ClassNotFound异常
+2.如果servlet类重写了父类的init方法，当需要调用this.getServletConfig()方法获取config时
+会有空指针异常，解决方法：在重载的init()方法中调用父类的init()并将当前类init中的config参数
+传入父类的init() 例：super.init(config);
+3.web应用为j2ee项目的web文件夹，当使用tomcat发布时会在该工程目录下的out文件夹中并以该项目命名
+C:\Program Files\JetBrains\TempJavaProject\out\artifacts路径下
+4:获取客户端的ip地址
+        String ip = request.getHeader("x-forwarded-for");
+
+ 		if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+
+ 			ip = request.getHeader("Proxy-Client-IP");
+ 		}
+ 		if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+
+ 			ip = request.getHeader("WL-Proxy-Client-IP");
+ 		}
+ 		if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+
+ 			ip = request.getRemoteAddr();
+ 		}
+5.设置字符格式
+response.setHeader("content-type","text/html;charset=UTF-8")
+6.在web.xml中 <context-param>代表全局参数于<servlet>同级别 整个项目的servlet均可使用 使用ServletContext获取 servletContext..getInitParameter()
+   <init-param>代表servlet的局部参数，包含于<servlet>中 仅在设置的Servlet可以使用 使用config..getInitParameter()
+7.ServletContext的作用域
+(1) ServletContext的作用域是整个web项目的所有Servlet都可以使用
+(2) 注意: 在重写init方法时一定要在方法内添加super.init(config)否则在使用this.getServletContext()时会出现空指针异常，原理很简单，
+因为父类没有加载init()方法，而且子类又没有重写getServletContext()所以并父类中ServletContext引用并没有指向web项目中ServletContext对象。
+8.请求转发,如果当前servlet使用了getWriter()转发的servlet要使用output的话就会出现互斥现象
+解决方案调用转发前使用response.reset()方法清除response的缓存数据
